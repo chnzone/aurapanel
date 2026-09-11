@@ -55,7 +55,7 @@ Most control panels are heavy, expose a large attack surface, and treat the web 
 ## Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mkoyazilim/aurapanel/v1.0.0/installer/aurapanel.sh | sudo -E bash
+curl -fsSL https://raw.githubusercontent.com/chnzone/aurapanel/v1.0.0/installer/aurapanel.sh | sudo -E bash
 ```
 
 > The installer pins every component to tested versions (OpenLiteSpeed, LSPHP, MariaDB) and locks them against unattended upgrades. Updates are delivered through the panel's Update Center after CI validation.
