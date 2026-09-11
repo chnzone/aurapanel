@@ -22,8 +22,8 @@ LSPHP82_VER="${AP_LSPHP82_VER:-8.2.33-1.noble}"
 LSPHP83_VER="${AP_LSPHP83_VER:-8.3.33-1.noble}"
 LSPHP84_VER="${AP_LSPHP84_VER:-8.4.24-1.noble}"
 PHP_MODULES="${AP_PHP_MODULES:-common curl intl mysql opcache redis}"
-DOWNLOAD_BASE="${AP_DOWNLOAD_BASE:-https://git.zt8.net/https://github.com/mkoyazilim/downloadaurapanel/releases/download/v${PANEL_VERSION}}"
-PANEL_BASE="${AP_PANEL_BASE:-https://git.zt8.net/https://github.com/chnzone/aurapanel/releases/download/v${PANEL_VERSION}}"
+DOWNLOAD_BASE="${AP_DOWNLOAD_BASE:-https://github.com/mkoyazilim/downloadaurapanel/releases/download/v${PANEL_VERSION}}"
+PANEL_BASE="${AP_PANEL_BASE:-https://github.com/chnzone/aurapanel/releases/download/v${PANEL_VERSION}}"
 PANEL_PORT=8080
 ACCESS_MODE="private"
 SKIP_OLS=0
@@ -113,7 +113,7 @@ SNAPPY_DIR="/usr/local/lsws/Example/html/snappymail"
 if [[ ! -d "$SNAPPY_DIR" ]]; then
   log "SnappyMail kuruluyor…"
   SNAPPY_VER="2.38.2"
-  SNAPPY_URL="https://git.zt8.net/https://github.com/the-djmaze/snappymail/releases/download/v${SNAPPY_VER}/snappymail-${SNAPPY_VER}.tar.gz"
+  SNAPPY_URL="https://github.com/the-djmaze/snappymail/releases/download/v${SNAPPY_VER}/snappymail-${SNAPPY_VER}.tar.gz"
   mkdir -p "$SNAPPY_DIR"
   curl -fsSL "$SNAPPY_URL" | tar -xz -C "$SNAPPY_DIR" 2>/dev/null || log "UYARI: SnappyMail indirilemedi, webmail manuel kurulabilir."
   chown -R nobody:nogroup "$SNAPPY_DIR" 2>/dev/null || true
